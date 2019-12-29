@@ -50,5 +50,40 @@ public class SourceCode {
 //        ForkJoinPool
 
 //        ThreadPoolExecutor
+
+
+        Integer[][] matrix = new Integer[][] {
+                {8,7},{9,5},{6,4}
+        };
+
+
+//        Arrays.sort(matrix, new Comparator<Integer[]>() {
+//            @Override
+//            public int compare(Integer[] o1, Integer[] o2) {
+//                if(o1[1] > o2[1]){
+//                    return 1;
+//                }else if(o1[1] == o2[1]){
+//                    return 0;
+//                }else {
+//                    return -1;
+//                }
+//            }
+//        });
+
+        Arrays.sort(matrix, (Integer[] o1 , Integer[] o2)->{
+            if(o1[1] > o2[1]){
+                return 1;
+            } else if (o1[1] == o2[1]) {
+                return 0;
+            } else {
+                return -1;
+            }
+        });
+
+
+        for (Integer[] i: matrix){
+            System.out.println(Arrays.toString(i));
+        }
+
     }
 }
