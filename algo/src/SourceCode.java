@@ -53,8 +53,8 @@ public class SourceCode {
 //        ThreadPoolExecutor
 
 
-        Integer[][] matrix = new Integer[][] {
-                {8,7},{9,5},{6,4}
+        Integer[][] matrix = new Integer[][]{
+                {8, 7}, {9, 5}, {6, 4}
         };
 
 
@@ -71,8 +71,8 @@ public class SourceCode {
 //            }
 //        });
 
-        Arrays.sort(matrix, (Integer[] o1 , Integer[] o2)->{
-            if(o1[1] > o2[1]){
+        Arrays.sort(matrix, (Integer[] o1, Integer[] o2) -> {
+            if (o1[1] > o2[1]) {
                 return 1;
             } else if (o1[1] == o2[1]) {
                 return 0;
@@ -82,10 +82,9 @@ public class SourceCode {
         });
 
 
-        for (Integer[] i: matrix){
+        for (Integer[] i : matrix) {
             System.out.println(Arrays.toString(i));
         }
-
 
 
         Integer a = 1;
@@ -99,11 +98,19 @@ public class SourceCode {
 
         System.out.println(c == d); //
         System.out.println(e == f);
-        System.out.println(c == (a+b));
-        System.out.println(c.equals(a+b));
+        System.out.println(c == (a + b));
+        System.out.println(c.equals(a + b));
 
-        System.out.println(g == (a+b));
-        System.out.println(g.equals(a+b));
+        System.out.println(g == (a + b));
+        System.out.println(g.equals(a + b));
 
+        String s = "bbbbbb";
+        test(s);
+        System.out.println(s);
+    }
+
+    public static void test(String str){
+        str = new String("aaaa");
+        System.out.println(str);
     }
 }
