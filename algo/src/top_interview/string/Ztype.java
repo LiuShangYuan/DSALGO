@@ -30,17 +30,18 @@ public class Ztype {
         if(numRows==1){
             return s;
         }
-        List<List<Character>> list = new ArrayList<>();
+        List<StringBuilder> list = new ArrayList<>();
 
         for (int i=0;i<numRows;i++){
-            list.add(new ArrayList<>());
+//            list.add(new ArrayList<>());
+            list.add(new StringBuilder());
         }
 
         int start = 0;
         boolean asc = true;
         for (int i=0;i<s.length();i++){
             char ch = s.charAt(i); // 字符
-            list.get(start).add(ch);
+            list.get(start).append(ch);
             if(asc) {
                 // 0 1 0 1 0
                 start++;
@@ -58,9 +59,8 @@ public class Ztype {
         StringBuilder builder = new StringBuilder();
 
         for (int i=0;i<numRows;i++){
-            for (int j=0;j<list.get(i).size();j++ ){
-                builder.append(list.get(i).get(j));
-            }
+            builder.append(list.get(i).toString());
+
         }
 
         return builder.toString();
