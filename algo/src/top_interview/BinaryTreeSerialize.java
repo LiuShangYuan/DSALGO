@@ -39,7 +39,7 @@ public class BinaryTreeSerialize {
         System.out.println();
     }
 
-    // Encodes a tree to a single string.
+    // Encodes a top_interview.tree to a single string.
     public String serialize(TreeNode root) {
         ArrayDeque<TreeNode> arrayDeque = new ArrayDeque<>();
 
@@ -79,7 +79,7 @@ public class BinaryTreeSerialize {
 
     }
 
-    // Decodes your encoded data to tree.
+    // Decodes your encoded data to top_interview.tree.
     public TreeNode deserialize(String data) {
         data = data.substring(1, data.length() - 1);
         if(data.equals("")){

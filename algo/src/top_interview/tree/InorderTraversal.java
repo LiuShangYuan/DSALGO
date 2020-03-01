@@ -1,6 +1,4 @@
-package tree;
-
-import sun.reflect.generics.tree.Tree;
+package top_interview.tree;
 
 import java.util.ArrayList;
 import java.util.List;

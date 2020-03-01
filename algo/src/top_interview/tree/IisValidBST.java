@@ -1,7 +1,5 @@
-package tree;
+package top_interview.tree;
 
-
-import java.util.Map;
 
 /**
  * 98. 验证二叉搜索树
