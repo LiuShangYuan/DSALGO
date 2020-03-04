@@ -6,6 +6,8 @@ import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.HashSet;
+import java.util.TreeMap;
 import java.util.concurrent.*;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -36,6 +38,14 @@ public class AQSStu {
         methodB.invoke(testFS);
 
         ConcurrentHashMap<String, String> concurrentHashMap = new ConcurrentHashMap<>();
+
+        HashMap<String, String> map = new HashMap<>();
+        HashSet<String> set = new HashSet<>();
+
+        TreeMap treeMap = new TreeMap();
+
+
+        CopyOnWriteArrayList copyOnWriteArrayList = new CopyOnWriteArrayList();
     }
 }
 
